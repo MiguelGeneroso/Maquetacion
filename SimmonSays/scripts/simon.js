@@ -5,6 +5,7 @@ function cambiar(){
     // this.mantenerColor();
     let magenta = document.getElementById("red");
     magenta.setAttribute("style","background-color: magenta");
+    setTimeout(mantenerColor(),2000);
     
     
     
