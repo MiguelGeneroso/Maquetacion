@@ -58,6 +58,8 @@
     color: white;
     text-align: center;
     width: 10%;
+    height: 5%;
+    font-size: 15px;
 }
 .cambiar__red{
     color: blue;
