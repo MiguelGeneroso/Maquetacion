@@ -345,3 +345,40 @@
     text-align: center;
     width: 80%;
 }
+.h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.marketing{
+    border: 2px solid black;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.marketing__div{
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+    /* margin: 20px; */
+}
+.marketing__div h1{
+    border: 2px solid orange;
+}
+.marketing__div img{
+    border: 2px solid green;
+    width: 70%;
+    /* height: 100%; */
+}
+.marketing__div p{
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+}
