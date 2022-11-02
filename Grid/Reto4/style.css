@@ -1,0 +1,80 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:'header header images'
+                        'articulo contenido contenido'
+                        'footer footer footer';
+}
+.header{
+    grid-area: header;
+    background-color: orangered;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.images{
+    grid-area: images;
+    background-color: brown;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.articulos{
+    grid-area: articulo;
+    background-color: orange;
+    height: 500px;
+    display: grid;
+    grid-template-areas:'article'
+                        'vacio'
+                        'article2';
+}
+.articulo1{
+    grid-area: article;
+    background-color: white;
+    margin: 10px;
+    color: brown;
+    text-align: center;
+}
+.vacio{
+    grid-area: vacio;
+}
+.articulo2{
+    grid-area: article2;    
+    background-color: white;
+    margin: 10px;
+    color: brown;
+    text-align: center;
+}
+.contenido{
+    grid-area: contenido;
+    background-color: rgb(245, 143, 10);
+    display: grid;
+    grid-template-areas:'contenido'
+                        'texto';
+}
+.cont{
+    grid-area: contenido;
+    border: 2px solid white;
+    text-align: center;
+    margin: 10px;
+    
+    padding-top: 10px;
+    color: white;
+}
+.txt{
+    grid-area: texto;
+    border: 2px solid white;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    color: white;
+}
+.footer{
+    grid-area: footer;
+    background-color: brown;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}

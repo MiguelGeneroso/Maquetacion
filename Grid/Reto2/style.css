@@ -1,0 +1,31 @@
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    
+}
+.a{
+    background-color: greenyellow;
+    color: black;
+}
+.b{
+    background-color: black;
+    color: white;
+}
+.c{
+    background-color: greenyellow;
+    color: black;
+}
+.d{
+    background-color: black;
+    color: white;
+}
+.e{
+    background-color: greenyellow;
+    color: black;
+}
+.f{
+    background-color: black;
+    color: white;
+}
