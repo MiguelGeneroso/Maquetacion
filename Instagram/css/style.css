@@ -1,0 +1,18 @@
+:root{
+    --background_color: black;
+    --secundary_background_color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    border: 2px solid red;
+    /* width: auto; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
