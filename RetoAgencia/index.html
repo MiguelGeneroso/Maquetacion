@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body class="main">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav--div">
+                <a href="">Logo</a>
+            </div>
+            <div class="header__nav--div2">
+                <div>
+                    <a href="">Inicio</a>
+                </div>
+                <div>
+                    <a href="">Viajes</a>
+                </div>
+                <div>
+                    <a href="">Encuentra tu viaje ideal</a>
+                </div>
+                <div>
+                    <a href="">Ofertas</a>
+                </div>
+                <div>
+                    <a href="">Blog</a>
+                </div>
+                <div>
+                    <a href="">Contacto</a>
+                </div>
+                
+            </div>
+
+        </nav>
+    </header>
+    <section class="section__descripcion">
+        <p>
+            Tanto si buscas alojarte en hoteles únicos, viajas en pareja, con la familia, con un grupo de amigos o te interesa jugar al golf además de descubrir un nuevo destino, tenemos el viaje ideal para cada viajero. 
+        </p>
+    </section>
+    <section class="section__tarjetas">
+        <div class="section__tarjetas--1">
+            <img src="img/imgNoruega.jpg" alt="">
+            <h1 class="section__tarjetas--titulo">Noruega</h1>
+            <p class="section__tarjetas--descripcion">Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos vikingos preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente en el centro olímpico Lillehammer.</p>
+        </div>
+        <div class="section__tarjetas--1">
+            <img src="img/imgNoruega.jpg" alt="">
+            <h1>Escocia</h1>
+            <p>Escocia, el país más septentrional del Reino Unido, es una tierra de áreas naturales en montañas, como los Cairngorms y las Tierras Altas del Noroeste, intercaladas con valles glaciales y lagos. Sus ciudades principales son Edimburgo, la capital, con su incónico castillo sobre un cerro, y Glasgow, famosa por su animado ambiente cultural. Escocia también es famosa por el golf, cuyo primer partido se disputó en el campo Old Course de St Andrews en el siglo XV.</p>
+        </div>
+        <div class="section__tarjetas--1">
+            <img src="img/imgNoruega.jpg" alt="">
+            <h1>Noruega</h1>
+            <p>Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros. Oslo, su capital, es una ciudad de áreas verdes y museos. En el Museo de barcos vikingos de Oslo, se muestran navíos vikingos preservados del siglo IX. Bergen, con coloridas casas de madera, es el punto de partida de los cruceros hacia el sorprendente fiordo de Sogn. Noruega también es famosa por la pesca, el excursionismo y el esquí, especialmente en el centro olímpico Lillehammer.</p>
+        </div>
+        <div class="section__tarjetas--1">
+            <img src="img/imgNoruega.jpg" alt="">
+            <h1>Escocia</h1>
+            <p>Escocia, el país más septentrional del Reino Unido, es una tierra de áreas naturales en montañas, como los Cairngorms y las Tierras Altas del Noroeste, intercaladas con valles glaciales y lagos. Sus ciudades principales son Edimburgo, la capital, con su incónico castillo sobre un cerro, y Glasgow, famosa por su animado ambiente cultural. Escocia también es famosa por el golf, cuyo primer partido se disputó en el campo Old Course de St Andrews en el siglo XV.</p>
+        </div>
+
+    </section>
+    <div class="hola"></div>
+    <section style="margin-top: 20px;">
+        <form action="" class="form">
+            <div class="form__div">
+                <div><label for="">Nombre:</label></div>
+                <div><input type="text" id="name"></div>
+                
+            </div>
+            <div class="form__div">
+                <div><label for="">Correo:</label></div>
+                <div><input type="text" id="mail"></div>
+            </div>
+            <div class="form__div">
+                <div><label for="">Destino:</label></div>
+                <div><input type="text" id="destino"></div>
+            </div>
+                        
+        </form>
+        <div class="form__div--2">
+            <div><input type="button" onclick="botonFiltrar()" value="Filtrar"></div><br>
+            <div><input type="button" onclick="getInfo()" value="Enviar"></div>
+        </div>
+    </section>
+    <script src="scripts/retoAgencia.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.main{
+    width: 100vw;
+    background-image: url("../img/imagenFondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hola{
+    width: 100%;
+    /* background-color: rgb(56, 149, 132); */
+    height: 50px;
+}
+/* HEADER */
+
+.header{
+    /* border: 2px solid #0000ff; */
+    background-color: black;
+    /* background-image: url("../img/miami.jpg");
+    background-size: contain;
+    background-repeat:repeat; */
+    width: 100%;
+    height: 8vh;
+}
+.header__nav{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__nav--div{
+    /* border: 2px solid pink; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__nav--div a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.header__nav--div2{
+    /* border: 2px solid black; */
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.header__nav--div2 div{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header__nav--div2 div a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    /* border: 2px solid rgb(21, 3, 3); */
+}
+/* FIN HEADER */
+/* DESCRIPCION */
+.section__descripcion{
+    width: 100%;
+    height: 30vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section__descripcion p{
+    /* border: 2px solid red; */
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+/* FIN DESCRIPCION */
+/* TARJETAS */
+.section__tarjetas{
+    /* border: 2p solid red; */
+    width: 100%;
+    height: 70%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section__tarjetas--1{
+    /* border: 2px solid red; */
+    border-radius: 1em;
+    background-color: black;
+    width: 20%;
+    height: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.section__tarjetas--1 img{
+    border: 2p solid black;
+    border-radius: 1em;
+    max-width: 100%;;
+    /* height: 50%; */
+}
+.section__tarjetas--1 p{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+.section__tarjetas--1 h1{
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid blue; */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.section__tarjetas--titulo{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+/* FIN TARAJETAS */
+/* FORMULARIO */
+.form{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20vw;
+    height: 20vh;
+    padding: 1em;
+    /* border: 1px solid rgb(14, 1, 1); */
+    border-radius: 1em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    gap: 10px;
+}
+.form__div{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+}
+.form__div label{
+    color: white;
+}
+.form__div input{
+    height: 100%;
+}
+.form__div--2{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+.form__div--2 input{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
