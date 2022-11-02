@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor__grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 10% [y1] 80% [y2] 10% [y3];
+    
+}
+.grid__header{
+    grid-column: x0 / x4;
+    grid-row: y0 /y1;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.grid__contenido{
+    grid-column-start: x0;
+    grid-column-end: x3;
+
+    grid-row-start: y1;
+    grid-row-end: y2;
+    
+    background-color: blue;
+    color: white;  
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+}
+.titulo{
+    grid-column: x0 / x3;
+    grid-row: y0 / y1;
+    border: 2px solid white;
+    /* margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+.texto1{
+    grid-column: x0 / x2;
+    grid-row: y1 / y4;
+    border: 2px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.texto2{
+    grid-column: x2 / x3;
+    grid-row: y1 / y4;
+    border: 2px solid white;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.grid__menu{
+    grid-column-start: x3;
+    grid-column-end: x4;
+
+    grid-row-start: y1;
+    grid-row-end: y2;
+    
+    background-color: cyan;
+    color: white;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+}
+.menu{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    padding-top: 15%;
+    /* padding-left: 45%; */
+    font-weight: bold;
+    font-size: 30px;
+    grid-column: x0 /x1;
+    grid-row: y0 / y1;
+}
+.menu1{
+    background-color: black;
+    margin: 10px;
+    text-align: center;
+    padding-top: 15%;
+    /* padding-left: 45%; */
+}
+.menu2{
+    background-color: black;
+    margin: 10px;
+    text-align: center;
+    padding-top: 15%;
+    /* padding-left: 45%; */
+}
+.menu3{
+    background-color: black;
+    margin: 10px;
+    text-align: center;
+    padding-top: 15%;
+    /* padding-left: 45%; */
+}
+.grid__footer{
+    padding: 10px;
+    grid-column-start: x0;
+    grid-column-end: x2;
+
+    grid-row-start: y2;
+    grid-row-end: y3;
+    
+    background-color: purple;
+    color: white;
+    border: 2px solid blue;
+    
+}
+.grid__contacto{
+    grid-column: x2/x4;
+
+    grid-row-start: y2;
+    grid-row-end: y3;
+    
+    background-color: purple;
+    color: white;
+    
+    border: 2px solid red;
+}

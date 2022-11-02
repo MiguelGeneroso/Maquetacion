@@ -1,0 +1,37 @@
+.contenedor__grid{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    
+}
+.a{
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+.b{
+    background-color: rgb(255, 213, 0);
+    text-align: center;
+    color: white;
+}
+.c{
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
+.d{
+    background-color: rgb(152, 99, 0);
+    text-align: center;
+    color: white;
+}
+.e{
+    background-color: rgb(85, 0, 85);
+    text-align: center;
+    color: white;
+}
+.f{
+    background-color: yellow;
+    text-align: center;  
+    color: white;   
+}
