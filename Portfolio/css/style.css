@@ -1,0 +1,242 @@
+/* PLANTILLA BASE */
+:root{
+    --background_color: black;
+    --secundary_background_color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.main{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-image: url("../img/fondo-main5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; */
+}
+.header{
+    /* border: 2px solid red; */
+    background-color: var(--background_color);
+    /* background: none; */
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__nav{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__nav--1{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+}
+.header__nav--1 p{
+    /* border: 2px solid blue; */
+    /* text-decoration: none; */
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.header__nav--2{
+    /* border: 2px solid orange; */
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.header__nav__div{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header__nav__div:hover{
+    background-color: var(--secundary_background_color);
+}
+.header__nav__div a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}   
+.header__nav__div a:hover{   
+    color: black;
+}
+.main__div--blanco{
+    border: 2px solid black;
+    height: 60px;
+    width: 100%;
+}
+.footer{
+    /* border: 2px solid red; */
+    position: fixed;
+    bottom: 0;  
+    height: 50px;
+    width: 100%;
+}
+.footer div{
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.section{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section__div--1{
+    /* border: 2px solid blue; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__div--2{
+    /* border: 2px solid green; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__div--2 img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+/* 
+FIN DE PLANTILLA BASE
+*/
+/*  
+SOBRE MI
+*/
+.sobremi__section{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 20px;
+    
+}
+.sobremi__section div{
+    border: 3px solid black;
+    border-radius: 1em;
+    width: 60%;
+    height: 70%;
+}
+.sobremi__section div p{
+    text-align: left;
+    font-size: 15px;
+    /* padding: 10px; */
+}
+/*  
+FIN DE SOBRE MI
+  */
+/*  
+TECNOLOGIAS
+  */
+.titulo{
+    margin-top: 8%;
+    text-align: center;
+    margin-bottom: 4%;    
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 5%;
+}
+.div__prueba{
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.div__prueba img{
+    width: 50%;
+    height: auto;
+}
+.div__prueba:hover{
+    transform: scale(1.2);
+}
+/*  
+FIN DE TECNOLOGIAS
+  */
+/*  
+PROYECTOS
+*/
+.proyectos__section{
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* margin-top: 20px; */
+    
+}
+.proyectos__section div{
+    border: 2px solid blue;
+    background-color: black;
+    width: 100%;
+    color: black;
+}
+.proyectos__section div h1{
+    color: white;
+}
+.proyectos__section div p{
+    color: white;
+}
+/*  
+FIN DE PROYECTOS
+
+*/
