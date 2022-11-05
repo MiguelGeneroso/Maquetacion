@@ -1,4 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    height: 100vh;
+    /* border: 5px solid red; */
+}
 .contenedor{
+    /* border: 5px solid black; */
     display: grid;
     grid-template-areas:'header header images'
                         'articulo contenido contenido'
@@ -6,75 +17,74 @@
 }
 .header{
     grid-area: header;
-    background-color: orangered;
-    height: 100px;
+    height: 110px;
+    background-color: chocolate;
     text-align: center;
-    color: white;
     padding-top: 10px;
 }
 .images{
     grid-area: images;
     background-color: brown;
-    height: 100px;
+    height: 110px;
     text-align: center;
-    color: white;
     padding-top: 10px;
 }
 .articulos{
     grid-area: articulo;
+    height: 526px;
     background-color: orange;
-    height: 500px;
-    display: grid;
-    grid-template-areas:'article'
-                        'vacio'
-                        'article2';
+    padding: 10px
 }
 .articulo1{
-    grid-area: article;
+    border: 2px solid white;
     background-color: white;
-    margin: 10px;
-    color: brown;
+    color: orange;
+    font-weight: bold;  
+    height: 33.33%;
     text-align: center;
+    padding-top: 10px;
 }
 .vacio{
-    grid-area: vacio;
+    /* border: 2px solid white; */
+    height: 33.33%;
 }
 .articulo2{
-    grid-area: article2;    
+    border: 2px solid white;
     background-color: white;
-    margin: 10px;
-    color: brown;
+    color: orange;
+    font-weight: bold;
+    height: 33.33%; 
     text-align: center;
+    padding-top: 10px;
 }
 .contenido{
     grid-area: contenido;
-    background-color: rgb(245, 143, 10);
-    display: grid;
+    height: 100%;
+    background-color: orangered;
     grid-template-areas:'contenido'
                         'texto';
+    padding: 10px;
 }
 .cont{
     grid-area: contenido;
+    height: 49%;
+    /* margin: 10px; */
     border: 2px solid white;
     text-align: center;
-    margin: 10px;
-    
     padding-top: 10px;
-    color: white;
 }
 .txt{
     grid-area: texto;
+    height: 49%;
+    margin-top: 10px;
     border: 2px solid white;
     text-align: center;
-    margin: 10px;
     padding-top: 10px;
-    color: white;
 }
 .footer{
     grid-area: footer;
     background-color: brown;
-    height: 100px;
+    height: 110px;
     text-align: center;
     padding-top: 10px;
-    color: white;
 }

@@ -1,0 +1,200 @@
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+/* ********** GRID ********** */
+
+
+.gridContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 20px ;
+
+}
+
+.a{
+    background-color: rgb(193, 243, 12);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.b {
+    background-color: rgb(5, 197, 21);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.c {
+    background-color: rgb(4, 172, 68);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.d {
+    background-color: rgb(1, 129, 76);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+/* ************************************ */
+/* ********** GRID NOMBRADAS ********** */
+
+
+.gridNombradas{ 
+    display: grid;
+
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr  [x4] ;
+    grid-template-rows: [y0]1fr [y1]2fr [y2]1fr [y3]1fr [y4];
+}
+.header {
+    grid-column-start: x0;
+    grid-column-end: x4;
+
+    grid-row-start: y0;
+    grid-row-end: y1;
+    
+    background-color: rgb(2, 8, 15);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.menu {
+
+    grid-column: x0 / x3;
+    grid-row: y1 / y3;
+    
+
+    background-color: rgb(54, 214, 166);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.contenido {
+    grid-column: x3 /x4;
+    grid-row: y1 / y3;
+
+    background-color: rgb(10, 34, 247);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.footer {
+    grid-column: x0 / x4;
+    grid-row: y3 / y4;
+    background-color: rgb(110, 8, 206);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+/* ******************************** */
+/* ********** GRID AREAS ********** */
+.gridAreas{
+    display: grid;
+
+    grid-template-areas: 
+        'header header imagen'
+        /* 'vacio vacio vacio' */
+        'menuLateral menuLateral contenido '
+        'footer footer footer';
+}
+/* .child {
+    grid-area: vacio;
+    height: 100px;
+} */
+.child_a {
+    grid-area: header;
+
+    background-color: rgb(255, 196, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.child_a1{
+    grid-area: imagen;
+    background-color: rgb(255, 81, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    /* height: 100px; */
+
+
+}
+/* .child_a2{
+    grid-area: imagen2;
+    background-color: rgb(255, 1, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+
+} */
+.child_b { 
+    grid-area: menuLateral; 
+    
+    background-color: rgb(255, 124, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    height: 600px;
+
+    display: grid;
+    grid-template-areas: 
+    'h1 h1'
+    'hola david';
+}
+.h1{
+    grid-area: h1;
+}
+.hola{
+    grid-area: hola;
+    border: 2px solid wheat;
+}
+.david{
+    grid-area: david;
+    border: 2px solid wheat;
+
+}
+.child_c { 
+    grid-area: contenido; 
+
+    background-color: rgb(255, 81, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    height: 600px;
+
+    display: grid;
+    grid-template-areas: 'tit tit'
+                         'footer1 footer2';
+}
+
+.cont{
+    grid-area: tit;
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+}
+.f1{
+    grid-area: footer1;
+    border: 2px solid black;
+}
+.f2{
+    grid-area: footer2;
+    border: 2px solid black;
+}
+
+
+.child_d { 
+    grid-area: footer; 
+
+    background-color: rgb(255, 1, 1);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
