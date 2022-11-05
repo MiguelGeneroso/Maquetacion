@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <!-- NAVBAR -->
+    <nav class="navbar__main navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar1 navbar-brand" href="index.html">Pelis<span>T</span>ube</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="peliculas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                    Peliculas
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item text-white" href="#">Acción</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Anime</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Ciencia ficción</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Comedia</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Drama</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Fantasia</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Musical</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Romántica</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Terror</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Thriller</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="añadirPelicula.html">Añadir Pelicula</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- FIN NAVBAR -->
+    <!-- FORMULARIO PROFESIONALES -->
+    <div class="row mt-5">
+
+        <div class="col-2"></div>
+        
+        <form class="col-2">
+            <h3 class="titulo-formulario text-white">--Actor--</h3>
+            <div class="mb-3">
+              <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nombre:</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" id="nombre" value="">
+            </div>
+            <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Edad:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="edad" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Peso:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="peso" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Altura:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="altura" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1">¿Esta retirado?</label>
+                <select class="form-select form-select-lg mb-3" id="retirado">
+                    <option selected>Selecciona uno</option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nacionalidad:</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" id="nacionalidad" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Numero de Oscars:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="numeroOscar" value="">
+              </div>
+
+              <button type="button" class="btn btn-primary" onclick="obtenerActor()">Añadir</button>
+          </form>
+
+          <div class="col-1">a</div>
+
+          <form class="col-2">
+            <h3 class="titulo-formulario text-white">--Director--</h3>
+            <div class="mb-3">
+              <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nombre:</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" id="nombreD" value="">
+            </div>
+            <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Edad:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="edadD" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Peso:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="pesoD" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Altura:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="alturaD" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1">¿Esta retirado?</label>
+                <select class="form-select form-select-lg mb-3" id="retiradoD">
+                    <option selected>Selecciona uno</option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nacionalidad:</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" id="nacionalidadD" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Numero de Oscars:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="numeroOscarD" value="">
+              </div>
+
+              <button type="button" class="btn btn-primary" onclick="obtenerDirector()">Añadir</button>
+          </form>
+
+          <div class="col-1">a</div>
+
+          <form class="col-2">
+            <h3 class="titulo-formulario text-white">--Guionista--</h3>
+            <div class="mb-3">
+              <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nombre:</label>
+              <input type="text" class="form-control" aria-describedby="emailHelp" id="nombreG" value="">
+            </div>
+            <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Edad:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="edadG" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Peso:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="pesoG" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Altura:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="alturaG" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1">¿Esta retirado?</label>
+                <select class="form-select form-select-lg mb-3" id="retiradoG">
+                    <option selected>Selecciona uno</option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nacionalidad:</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" id="nacionalidadG" value="">
+              </div>
+              <div class="mb-3">
+                <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Numero de Oscars:</label>
+                <input type="number" class="form-control" aria-describedby="emailHelp" id="numeroOscarG" value="">
+              </div>
+
+              <button type="button" class="btn btn-primary" onclick="obtenerGuionista()">Añadir</button>
+          </form>
+
+          <div class="col-2">a</div>
+
+    </div>
+    <!-- FIN DE PROFESIONALES -->
+    <!-- CREAR PELICULAS -->
+    <!-- <div class="row mt-5"> -->
+
+      <!-- <div class="col-5"></div> -->
+      
+      <form>
+        <h3 class="titulo-formulario text-white">--Pelicula--</h3>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Titulo:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="titulo" value="">
+          </div>
+  
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Año de estreno:</label>
+            <input type="number" class="form-control" aria-describedby="emailHelp" id="año" value="">
+          </div>
+          
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Nacionalidad:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="nacionalidad" value="">
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-3"></div>
+
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Genero:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="genero" value="">
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Idioma:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="idioma" value="">
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Plataforma:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="plataforma" value="">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Personaje principal:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="personajePrincipal" value="">
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Productor:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="productor" value="">
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1" class="form-label text-white">Distribuidora:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" id="distribuidora" value="">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1">Director</label>
+              <select class="form-select form-select-lg mb-3" id="mostrarDirectoresP">
+                <option selected>Selecciona uno</option>
+              </select>
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1">Guionista</label>
+              <select class="form-select form-select-lg mb-3" id="mostrarGuionistasP">
+                <option selected>Selecciona uno</option>
+              </select>
+          </div>
+          <div class="mb-3 col-2">
+            <label class="text-white" for="exampleInputEmail1">Actores</label>
+            <select class="form-select form-select-lg mb-3" id="mostrarActoresP">
+              <option selected>Selecciona uno</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="mb-3 col-4">
+            <label for="formFile" class="form-label text-white">Introduce una url de una imagen</label>
+            <input class="form-control" type="text" id="formFile" placeholder="url">
+          </div>
+        </div>
+        
+        <div class="row">
+          <button type="button" class="btn btn-primary" onclick="crearPelicula()">Añadir Pelicula</button>
+        </div>
+        
+        
+        
+
+        
+      </form>
+
+        <!-- <div class="col-5">a</div> -->
+
+    <!-- </div> -->
+    <!-- FIN DE PELICULAS -->
+
+    <!-- TARJETAS DE PELICULAS -->
+    
+    <div class="row d-flex justify-content-center d-grid gap-5 border border-danger me-1 mt-5" style="width: auto;" id="contenerPeliculas">
+      
+    </div>
+    <!-- FIN DE TARDEJETAS DE PELICULAS -->
+    <!-- Modal Director-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Director</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Guionista-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Guionista</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Actor-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Actores</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JSBOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- SCRIPTS JS -->
+    <script src="imdb.js"></script>
+    <!-- <script src="movie.js"></script>
+    <script src="professional.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.navbar__main{
+    border-bottom: 1px solid gray;
+}
+.navbar1{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+ .contenedor{
+    width: auto;
+    height: 500px;
+    border: 2px solid red
+ }
+ .titulo-formulario{
+    text-align: center;
+    margin-top: 10px;
+ }
+ 
