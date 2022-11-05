@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .contenedor{
     width: auto;
     height: auto;
@@ -12,6 +17,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    border: 2px solid orange;
     /* gap: 40px; */
 }
 .imgs{
@@ -156,7 +162,7 @@
     height: 50px;
 }
 .footer{
-    /* border: 2px solid black; */
+    border: 2px solid black;
     height: 56px;
     margin-bottom: 20px;
     display: flex;
